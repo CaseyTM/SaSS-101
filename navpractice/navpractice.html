@@ -2,33 +2,104 @@
 <html>
 <head>
 	<title></title>
-  <link rel="stylesheet" type="text/css" href="nav.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/styles.css">
 </head>
 <body>
 
-<div class="page">
-  <span class="menu_toggle">
-    <i class="menu_open fa fa-bars fa-lg"></i>
-    <i class="menu_close fa fa-times fa-lg"></i>
-  </span>
-  <ul class="menu_items">
-    <li><a href="#"><i class="icon fa fa-signal fa-2x"></i> Moar</a></li>
-    <li><a href="#"><i class="icon fa fa-coffee fa-2x"></i> Coffee</a></li>
-    <li><a href="#"><i class="icon fa fa-heart fa-2x"></i> Please</a></li>
-  </ul>
-  <main class="content">
-    <div class="content_inner">
-      <h1>The mysterious red button of doom</h1>
-      <p>Do <strong>not</strong> push that big, red button in the corner. People will die. You have been warned. Do&hellip; not do it.</p>
-        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem, ducimus laudantium, earum eos natus sint voluptatum dolores fuga quibusdam consectetur dicta. Laudantium enim inventore iusto ducimus est velit aperiam tempora quibusdam id dolore natus perferendis, debitis distinctio optio repellendus, repellat molestias delectus harum eius, reiciendis dicta ipsum architecto! Eligendi expedita in beatae, placeat unde voluptatibus voluptates consectetur explicabo laudantium, officiis ad nihil. Beatae similique voluptate sequi voluptatem delectus iure in omnis, fuga ipsam nulla ipsum architecto, iste debitis nisi labore quisquam odio accusantium corporis sint perspiciatis. Excepturi earum nobis soluta, doloremque nihil dolorum illum quaerat magnam nemo non sed!</p>
-      
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem, ducimus laudantium, earum eos natus sint voluptatum dolores fuga quibusdam consectetur dicta. Laudantium enim inventore iusto ducimus est velit aperiam tempora quibusdam id dolore natus perferendis, debitis distinctio optio repellendus, repellat molestias delectus harum eius, reiciendis dicta ipsum architecto! Eligendi expedita in beatae, placeat unde voluptatibus voluptates consectetur explicabo laudantium, officiis ad nihil. Beatae similique voluptate sequi voluptatem delectus iure in omnis, fuga ipsam nulla ipsum architecto, iste debitis nisi labore quisquam odio accusantium corporis sint perspiciatis. Excepturi earum nobis soluta, doloremque nihil dolorum illum quaerat magnam nemo non sed!</p>
-      
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem, ducimus laudantium, earum eos natus sint voluptatum dolores fuga quibusdam consectetur dicta. Laudantium enim inventore iusto ducimus est velit aperiam tempora quibusdam id dolore natus perferendis, debitis distinctio optio repellendus, repellat molestias delectus harum eius, reiciendis dicta ipsum architecto! Eligendi expedita in beatae, placeat unde voluptatibus voluptates consectetur explicabo laudantium, officiis ad nihil. Beatae similique voluptate sequi voluptatem delectus iure in omnis, fuga ipsam nulla ipsum architecto, iste debitis nisi labore quisquam odio accusantium corporis sint perspiciatis. Excepturi earum nobis soluta, doloremque nihil dolorum illum quaerat magnam nemo non sed!</p>
-    </div>
-  </main>
-</div>
+<nav class="navbar navbar-m2p sidebar" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				Foobar<b>Company</b>
+			</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<!-- Dashboard -->
+				<li class="active open">
+				  <a href="#">
+					  <span class="pull-right hidden-xs showopacity glyphicon material-icons">av_timer</span> Dashboard
+				  </a>
+				</li>
+				<!-- Banner -->
+				<li class="">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="menu-icon pull-right hidden-xs showopacity glyphicon material-icons">burst_mode</span>
+						Banners <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu forAnimate" role="menu">
+						<li><a href="#"><i class="material-icons">add</i> Add</a></li>
+						<li><a href="#"><i class="material-icons">sort</i> List</a></li>
+					</ul>
+				</li>
+				<li class="separator">Content</li>
+				<!-- Page -->
+				<li class="">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="menu-icon pull-right hidden-xs showopacity glyphicon material-icons">description</span>
+						Pages <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu forAnimate" role="menu">
+						<li><a href="#"><i class="material-icons">add</i> Add</a></li>
+						<li><a href="#"><i class="material-icons">sort</i> List</a></li>
+					</ul>
+				</li>
+				<!-- Blog -->
+				<li class="">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="menu-icon pull-right hidden-xs showopacity glyphicon material-icons">chat_bubble_outline</span>
+						Blog <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu forAnimate" role="menu">
+						<li><a href="#"><i class="material-icons">add</i> Add</a></li>
+						<li><a href="#"><i class="material-icons">sort</i> List</a></li>
+					</ul>
+				</li>
+				<!-- Tags -->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon material-icons">label</span>
+						Tags <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu forAnimate" role="menu">
+						<li><a href="#"> <i class="material-icons">add</i> Add</a></li>
+						<li><a href="#"> <i class="material-icons">sort</i> List</a></li>
+					</ul>
+				</li>
+				<li class="separator">System</li>
+				<!-- Users -->
+				<li class="#">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="menu-icon pull-right hidden-xs showopacity glyphicon material-icons">group</span>
+						Users <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu forAnimate" role="menu">
+						<li><a href="#"><i class="material-icons">add</i> Add</a></li>
+						<li><a href="#"><i class="material-icons">sort</i> List</a></li>
+					</ul>
+				</li>
+				<!-- Exit -->
+				<li>
+					<a href="#">
+						<span class="menu-icon pull-right hidden-xs showopacity glyphicon material-icons">exit_to_app</span> Exit
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+
 <script
   src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <script type="text/javascript" src="nav.js"></script>

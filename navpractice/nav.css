@@ -1,6 +1,9 @@
+$red: #F37272;
+$brown: #584E4A;
+$whitey: #f0f0f0;
 
-
-
+$snap: cubic-bezier(1.000, 0.005, 0.240, 1.000);
+$bounce: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
 * {
   box-sizing: border-box;
@@ -12,16 +15,16 @@ body {
 }
 .page {
   height: 100%;
-  background-color: #584E4A;
+  background-color: $brown;
 }
 .content {
   // essential
   height: 200%; // make higher or you'll see background when rotated
   transform-origin: top left;
-  transition: transform .7s cubic-bezier(1.000, 0.005, 0.240, 1.000);
+  transition: transform .7s $snap;
   
   // styling
-  background-color: #f0f0f0;
+  background-color: $whitey;
 }
 .content_inner {
   // essential
@@ -42,7 +45,7 @@ body {
   cursor: pointer;
   width: 100px;
   height: 80px;
-  background-color: #F37272;
+  background-color: $red;
   border-bottom-right-radius: 100%;
   
   &:active {
@@ -51,7 +54,7 @@ body {
     }
   }  
   i {
-    color: #f0f0f0;
+    color: $whitey;
   }
   .menu_open,
   .menu_close {
@@ -60,7 +63,7 @@ body {
     left: 50%;
     margin-top: -15px;
     margin-left: -12px;
-    transition: transform .7s cubic-bezier(1.000, 0.005, 0.240, 1.000);
+    transition: transform .7s $snap;
   }
   .menu_open {
     transform-origin: -100px -100px;
@@ -82,7 +85,7 @@ body {
     height: 60px;
     margin-bottom: 30px;
     transform: translateX(-300px);
-    transition: transform .7s 0s cubic-bezier(1.000, 0.005, 0.240, 1.000);
+    transition: transform .7s 0s $snap;
     
     &:nth-child(2){
       margin-left: 40px;
@@ -96,14 +99,14 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: darken(#f0f0f0, 30%);
+    color: darken($whitey, 30%);
     transition: color .2s;
     
     .icon {
       position: relative;
       display: inline-block;
       margin-right: 25px;
-      color: #f0f0f0;
+      color: $whitey;
 
       &:after {
         position: absolute;
@@ -116,22 +119,22 @@ body {
         margin-left: -33px;
         margin-top: -32px;
         border-radius: 100%;
-        border: 2px solid #f0f0f0;
+        border: 2px solid $whitey;
         transition: border-color .2s;
       }
     }
     
     &:hover {
-      color: #f0f0f0;
+      color: $whitey;
       .icon {
         &:after {
-          border-color: #F37272;
+          border-color: $red;
         }
       }
     }
     &:active {
       .icon {
-        color: #F37272;
+        color: $red;
       }
     }
   }
@@ -163,7 +166,7 @@ body {
   .menu_items {
     li {
       transform: translateX(0);
-      transition: transform .35s .45s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+      transition: transform .35s .45s $bounce;
     
       &:nth-child(2){
         transition-delay: .47s;
@@ -181,5 +184,5 @@ h1 {
   border-bottom: 1px solid #ddd;
 }
 body {
-  color: #584E4A;
+  color: $brown;
 }
